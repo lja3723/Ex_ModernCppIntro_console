@@ -1,10 +1,13 @@
 #include "Rect.h"
 
 //생성자 함수
-Rect::Rect(int, int, int, int)
+Rect::Rect(int tlX, int tlY, int brX, int brY)
+	: upperLeftX(tlX), upperLeftY(tlY), lowerRightX(brX), lowerRightY(brY)
 {
 }
+
 Rect::Rect()
+	: upperLeftX(100), upperLeftY(100), lowerRightX(200), lowerRightY(200)
 {
 }
 
@@ -12,6 +15,7 @@ Rect::Rect()
 Rect::Rect(int)
 {
 }
+
 Rect::operator int()
 {
 	return 0;
@@ -32,7 +36,7 @@ bool Rect::includes(const int, const int)
 }
 int Rect::area() const
 {
-	return 0;
+	return (lowerRightX - upperLeftX) * (lowerRightY - upperLeftY);
 }
 
 //연산자 오버로딩

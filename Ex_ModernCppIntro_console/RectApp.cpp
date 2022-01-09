@@ -1,5 +1,5 @@
 #include "Rect.h"
-
+#include "Stack.h"
 int main()
 {
 	Rect* theRectPtr = nullptr;

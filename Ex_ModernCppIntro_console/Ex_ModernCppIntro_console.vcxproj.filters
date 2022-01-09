@@ -15,14 +15,17 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Rect.cpp">
+    <ClCompile Include="3.2.5.템플릿 클래스.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="RectApp.cpp">
+    <ClCompile Include="Rect.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Stack.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
     <ClInclude Include="Rect.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
