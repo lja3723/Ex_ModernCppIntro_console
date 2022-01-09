@@ -14,6 +14,7 @@ Rect::Rect(int)
 }
 Rect::operator int()
 {
+	return 0;
 }
 
 //소멸자
@@ -42,6 +43,7 @@ bool Rect::operator>(const Rect&)
 Rect& Rect::operator++()
 {
 	// TODO: 여기에 return 문을 삽입합니다.
+	return *this;
 }
 Rect Rect::operator++(int)
 {
@@ -85,15 +87,17 @@ bool operator<(const Rect&, const Rect&)
 {
 	return false;
 }
-Rect& operator--(Rect&)
+Rect& operator--(Rect& rhs)
 {
 	// TODO: 여기에 return 문을 삽입합니다.
+	return rhs;
 }
 Rect operator--(Rect&, int)
 {
 	return Rect();
 }
-std::ostream& operator<<(std::ostream&, const Rect&)
+std::ostream& operator<<(std::ostream& os, const Rect&)
 {
 	// TODO: 여기에 return 문을 삽입합니다.
+	return os;
 }
