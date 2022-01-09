@@ -18,6 +18,13 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Rect.cpp" />
+    <ClCompile Include="RectApp.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Rect.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
