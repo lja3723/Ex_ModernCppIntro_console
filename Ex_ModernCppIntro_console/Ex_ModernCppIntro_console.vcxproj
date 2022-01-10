@@ -18,13 +18,6 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="3.2.12.1.vector 컨테이너.cpp" />
-    <ClCompile Include="Rect.cpp" />
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="Rect.h" />
-  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
