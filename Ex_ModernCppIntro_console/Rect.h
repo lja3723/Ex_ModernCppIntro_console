@@ -1,8 +1,6 @@
 #pragma once
 #include <iostream>
 
-using std::cout; using std::endl;
-
 class Rect {
 public:
 	//생성자 함수
@@ -10,7 +8,7 @@ public:
 	Rect();
 
 	//타입 캐스팅
-	Rect(int);
+	explicit Rect(int);
 	operator int();
 
 	//소멸자
@@ -20,6 +18,8 @@ public:
 	void moveTo(int, int);
 	bool includes(const int, const int);
 	int area() const;
+	int getWidth() const;
+	int getHeight() const;
 
 	//연산자 오버로딩
 	bool operator>(const Rect&);
@@ -33,10 +33,10 @@ public:
 	int getLowerRightY() const;
 
 	//변경함수
-	void setUpperLeftX();
-	void setUpperLeftY();
-	void setLowerRightX();
-	void setLowerRightY();
+	void setUpperLeftX(int x);
+	void setUpperLeftY(int y);
+	void setLowerRightX(int x);
+	void setLowerRightY(int y);
 
 protected:
 	int upperLeftX;
