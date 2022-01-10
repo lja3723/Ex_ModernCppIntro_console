@@ -9,6 +9,8 @@ int main()
 	Rect* rect2 = new Rect(200, 200, 250, 270);
 	std::shared_ptr<Rect> rect3(new Rect(300, 300, 320, 380));
 
+	rect1 < *rect2;
+
 	cout << rect1 << endl;
 	cout << *rect2 << endl;
 	cout << *rect3 << endl;

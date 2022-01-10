@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="3.2.5.템플릿 클래스.cpp">
+    <ClCompile Include="3.2.10 tuple 타입.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="Rect.cpp">
@@ -23,9 +23,6 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Stack.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
     <ClInclude Include="Rect.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
