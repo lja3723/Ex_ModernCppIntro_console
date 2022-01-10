@@ -55,6 +55,6 @@ int main(void)
 	cout << rectName << endl;
 	auto rectOwner = std::tuple_cat(student1, rect);
 	cout << std::get<2>(student1).name << "'s rectangle is " << std::get<3>(rectOwner) << endl;
-
+	
 	return 0;
 }
