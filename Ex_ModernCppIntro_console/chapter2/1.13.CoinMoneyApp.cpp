@@ -35,7 +35,7 @@ void CoinMoney_print(struct CoinMoney m)
 int main()
 {
 	struct CoinMoney m1, m2, m3;	// three CoinMoney variables
-	int value;
+	int get_value;
 	m1.c50 = 1;						// initialize m1
 	m1.c100 = 2;
 	m1.c500 = 3;
@@ -44,9 +44,9 @@ int main()
 	m2 = m1;						// can assign struct to each other
 	printf("m2 = ");				// print m2
 	CoinMoney_print(m2);			// m2 is now a copy of m1
-	value = CoinMoney_value(m1);	// get and print m1's total value
+	get_value = CoinMoney_value(m1);	// get and print m1's total value
 	printf("m1Àº ");
-	printf("ÃÑ %d¿ø\n", value);
+	printf("ÃÑ %d¿ø\n", get_value);
 	m3 = CoinMoney_add(m1, m2);		// add m1 & m2, store in m3
 	printf("m3 = ");				// print m3
 	CoinMoney_print(m3);

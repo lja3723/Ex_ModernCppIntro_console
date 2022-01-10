@@ -60,8 +60,8 @@ int main()
 	cout << "m2 = ";			
 	CoinMoney_print(*pm2);			
 
-	auto value = CoinMoney_value(*pm1);	
-	cout << "m1Àº ÃÑ " << value << "¿ø" << endl;
+	auto get_value = CoinMoney_value(*pm1);	
+	cout << "m1Àº ÃÑ " << get_value << "¿ø" << endl;
 
 	auto pm3 = CoinMoney_add(pm1, pm2);	
 	cout << "m3 = ";			
