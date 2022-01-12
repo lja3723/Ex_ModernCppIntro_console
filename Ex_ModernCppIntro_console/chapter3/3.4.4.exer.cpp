@@ -8,10 +8,25 @@ public:
 	{}
 	CoinMoney(int c, int cc, int ccc) : c50(c), c100(cc), c500(ccc)
 	{}
+	explicit CoinMoney(int m)
+	{
+		c500 = m / 500;
+		m %= 500;
+		c100 = m / 100;
+		m %= 100;
+		c50 = m / 50;
+		m %= 50;
+		cout << m << "원 남았습니다.\n";
+	}
 	virtual ~CoinMoney()
 	{}
 
-	int get_value() const
+	explicit operator int() const
+	{
+		return (50 * c50 + 100 * c100 + 500 * c500);
+	}
+
+	/*int get_value() const
 	{
 		return (50 * c50 + 100 * c100 + 500 * c500);
 	}
@@ -23,7 +38,7 @@ public:
 			<< c100 << "개, 500원 "
 			<< c500 << "개, 총 "
 			<< get_value() << "원" << endl;
-	}
+	}*/
 
 	//getters
 	int get_c50() const { return c50; }
@@ -56,28 +71,18 @@ ostream& operator<<(ostream& os, const CoinMoney& m)
 		<< m.get_c50() << "개, 100원 "
 		<< m.get_c100() << "개, 500원 "
 		<< m.get_c500() << "개, 총 "
-		<< m.get_value() << "원" << endl;
+		<< int(m) << "원" << endl;
 	return os;
 }
 
 int main()
 {
-	CoinMoney m1(1, 2, 3);
-	CoinMoney m2, m3;	
-
-	printf("m1 = ");
-	m1.print();			
-
-	printf("m2 = ");
-	m2.set_c50(1);
-	m2.set_c100(2);
-	m2.set_c500(3);
-	m2.print();
-	cout << "m1은 " << m1.get_value() << "원\n";
-
-	m3 = add(m1, m2);	
-	printf("m3 = ");
-	m3.print();
-
+	CoinMoney m1;
+	CoinMoney m2{ 2, 3, 4 };
+	m1 = CoinMoney(4752);
+	cout << "m1 = " << m1;
+	cout << "m2 = " << m2;
+	int value = int(m2);
+	cout << "m2는 총 " << value << "원" << endl;
 	return 0;
 }
