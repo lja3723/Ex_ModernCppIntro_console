@@ -21,7 +21,7 @@
     <ClCompile Include="Card.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="4.2.8.4.람다의 활용.cpp">
+    <ClCompile Include="4.3.1.CoinMoneyApp.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>

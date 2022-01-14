@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="4.2.8.4.람다의 활용.cpp" />
+    <ClCompile Include="4.3.1.CoinMoneyApp.cpp" />
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Rect.cpp" />
   </ItemGroup>
