@@ -19,7 +19,6 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="4.3.1.CoinMoneyApp.cpp" />
     <ClCompile Include="Card.cpp" />
     <ClCompile Include="Rect.cpp" />
   </ItemGroup>
